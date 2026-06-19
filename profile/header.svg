@@ -1,84 +1,73 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="300" viewBox="0 0 800 300">
   <defs>
-    <!-- Background Glow -->
+    <!-- Deep immersive background -->
     <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#002208" />
-      <stop offset="100%" stop-color="#090909" />
+      <stop offset="0%" stop-color="#001a05" />
+      <stop offset="100%" stop-color="#050505" />
     </radialGradient>
-
-    <!-- Neon Sweep for Text -->
-    <linearGradient id="shine" x1="-1" y1="0" x2="0" y2="0">
-      <stop offset="0%" stop-color="#003311" />
-      <stop offset="40%" stop-color="#00FF41" />
-      <stop offset="60%" stop-color="#00FF41" />
-      <stop offset="100%" stop-color="#003311" />
-      <animate attributeName="x1" values="-2; 2" dur="4s" repeatCount="indefinite" />
-      <animate attributeName="x2" values="-1; 3" dur="4s" repeatCount="indefinite" />
-    </linearGradient>
-
-    <!-- Text Glow Filter -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    
+    <!-- Neon Glow Filter -->
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-
-    <!-- Radar Sweep Gradient -->
-    <linearGradient id="radarSweep" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#00FF41" stop-opacity="0" />
-      <stop offset="90%" stop-color="#00FF41" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#00FF41" stop-opacity="0.6" />
-    </linearGradient>
-    
-    <!-- CRT Monitor Scanline Grid -->
-    <pattern id="grid" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="4" fill="none" />
-      <path d="M 4 0 L 0 0 0 4" fill="none" stroke="#000000" stroke-width="1" opacity="0.5"/>
-    </pattern>
   </defs>
 
-  <!-- Base Background -->
   <rect width="100%" height="100%" fill="url(#bgGlow)" rx="15" ry="15" />
 
-  <!-- The Cybernetic Core (Spinning Rings) -->
-  <g transform="translate(400, 150)">
-    <!-- Ring 1 (Inner, Slow clockwise) -->
-    <circle cx="0" cy="0" r="80" fill="none" stroke="#00FF41" stroke-width="1" stroke-dasharray="10 15" opacity="0.3">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite" />
-    </circle>
-    
-    <!-- Ring 2 (Middle, Fast counter-clockwise) -->
-    <circle cx="0" cy="0" r="120" fill="none" stroke="#00FF41" stroke-width="2" stroke-dasharray="30 20 5 20" opacity="0.4">
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="12s" repeatCount="indefinite" />
-    </circle>
-
-    <!-- Ring 3 (Outer, Outer dots clockwise) -->
-    <circle cx="0" cy="0" r="180" fill="none" stroke="#00FF41" stroke-width="3" stroke-dasharray="2 12" opacity="0.5">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="25s" repeatCount="indefinite" />
-    </circle>
-    
-    <!-- Ring 4 (Massive Outer Boundary) -->
-    <circle cx="0" cy="0" r="240" fill="none" stroke="#00FF41" stroke-width="1" stroke-dasharray="150 50" opacity="0.2">
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="40s" repeatCount="indefinite" />
-    </circle>
+  <!-- Floating Data Nodes (Particles) -->
+  <g fill="#00FF41" filter="url(#neonGlow)">
+    <circle cx="100" cy="350" r="2" opacity="0"><animate attributeName="cy" values="350; -50" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.6; 0" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="250" cy="350" r="3" opacity="0"><animate attributeName="cy" values="350; -50" dur="12s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.8; 0" dur="12s" begin="2s" repeatCount="indefinite"/></circle>
+    <circle cx="400" cy="350" r="1.5" opacity="0"><animate attributeName="cy" values="350; -50" dur="10s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.5; 0" dur="10s" begin="1s" repeatCount="indefinite"/></circle>
+    <circle cx="550" cy="350" r="2.5" opacity="0"><animate attributeName="cy" values="350; -50" dur="14s" begin="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.7; 0" dur="14s" begin="4s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="350" r="2" opacity="0"><animate attributeName="cy" values="350; -50" dur="9s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.6; 0" dur="9s" begin="3s" repeatCount="indefinite"/></circle>
+    <circle cx="180" cy="350" r="4" opacity="0"><animate attributeName="cy" values="350; -50" dur="15s" begin="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.4; 0" dur="15s" begin="5s" repeatCount="indefinite"/></circle>
+    <circle cx="620" cy="350" r="1" opacity="0"><animate attributeName="cy" values="350; -50" dur="7s" begin="0.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.8; 0" dur="7s" begin="0.5s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- The Main Text -->
-  <text x="50%" y="45%" font-family="'Courier New', Courier, monospace" font-weight="bold" font-size="75" text-anchor="middle" fill="url(#shine)" filter="url(#glow)" dominant-baseline="middle" letter-spacing="4">
+  <!-- Morphing Data Waves -->
+  <g fill="none" stroke-width="2" filter="url(#neonGlow)">
+    
+    <!-- Wave 1 (Fast, subtle) -->
+    <path stroke="#00FF41" opacity="0.3">
+      <animate attributeName="d" 
+        values="M-100,150 C100,50 300,250 500,150 S700,50 900,150;
+                M-100,150 C100,250 300,50 500,150 S700,250 900,150;
+                M-100,150 C100,50 300,250 500,150 S700,50 900,150" 
+        dur="6s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Wave 2 (Slow, sweeping) -->
+    <path stroke="#00ff9d" opacity="0.2" stroke-width="1">
+      <animate attributeName="d" 
+        values="M-100,150 C150,250 250,50 450,150 S650,250 900,150;
+                M-100,150 C150,50 250,250 450,150 S650,50 900,150;
+                M-100,150 C150,250 250,50 450,150 S650,250 900,150" 
+        dur="10s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Wave 3 (Bold, hypnotic) -->
+    <path stroke="#00a82b" opacity="0.5" stroke-width="4">
+      <animate attributeName="d" 
+        values="M-100,150 C200,80 400,220 600,150 S800,80 900,150;
+                M-100,150 C200,220 400,80 600,150 S800,220 900,150;
+                M-100,150 C200,80 400,220 600,150 S800,80 900,150" 
+        dur="8s" repeatCount="indefinite" />
+    </path>
+
+  </g>
+
+  <!-- Central Text -->
+  <text x="50%" y="55%" font-family="'Courier New', Courier, monospace" font-weight="bold" font-size="80" text-anchor="middle" fill="#ffffff" filter="url(#neonGlow)" dominant-baseline="middle" letter-spacing="6">
     APPOLOGY INC.
   </text>
   
-  <text x="50%" y="65%" font-family="'Courier New', Courier, monospace" font-weight="normal" font-size="16" text-anchor="middle" fill="#00FF41" opacity="0.7" letter-spacing="8">
-    SYSTEM ARCHITECTURE
+  <!-- Subtle reflection text -->
+  <text x="50%" y="55%" font-family="'Courier New', Courier, monospace" font-weight="bold" font-size="80" text-anchor="middle" fill="#00FF41" opacity="0.3" dominant-baseline="middle" letter-spacing="6" transform="translate(0, 4)">
+    APPOLOGY INC.
   </text>
-
-  <!-- Holographic Scanning Line (Moves Top to Bottom) -->
-  <rect width="100%" height="40" fill="url(#radarSweep)" opacity="0.5">
-    <animate attributeName="y" values="-40; 340" dur="3s" repeatCount="indefinite" />
-  </rect>
-
-  <!-- CRT Grid Overlay applied on top of everything to give it screen texture -->
-  <rect width="100%" height="100%" fill="url(#grid)" rx="15" ry="15" pointer-events="none" />
 </svg>
