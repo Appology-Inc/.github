@@ -1,6 +1,6 @@
 <div align="center">
-  <!-- Aggressive Matrix Green / Black Rectangle Header with ScaleIn animation -->
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=090909&height=250&section=header&text=APPOLOGY%20INC.&fontSize=90&fontColor=00FF41&animation=scaleIn&desc=System%20Online.&descAlignY=75&descSize=20" width="100%" alt="Appology Inc Header" />
+  <!-- Matrix Cylinder Header with Twinkling Animation (No Wave) -->
+  <img src="https://capsule-render.vercel.app/api?type=cylinder&color=090909&height=250&section=header&text=APPOLOGY%20INC.&fontSize=90&fontColor=00FF41&animation=twinkling&desc=System%20Online.&descAlignY=75&descSize=20" width="100%" alt="Appology Inc Header" />
 
   <h2 align="center">Building the Future of the Web.</h2>
 
@@ -52,7 +52,7 @@
   <br/><br/>
   <p>
     <a href="https://github.com/Appology-Inc/anjani-restaurant">
-      <img src="https://img.shields.io/badge/View_The_Codebase-00FF41?style=for-the-badge&logo=github&logoColor=090909" alt="View Repository" />
+      <img src="https://img.shields.io/badge/View_The_Codebase-090909?style=for-the-badge&logo=github&logoColor=00FF41" alt="View Repository" />
     </a>
   </p>
 </div>
@@ -60,11 +60,21 @@
 <hr />
 
 <div align="center">
-  <h2>🏆 Organizational Milestones & Trophies</h2>
-  <p>A showcase of our engineering achievements and open-source impact.</p>
-  <br>
-  <!-- GitHub Profile Trophy with Matrix theme -->
-  <img src="https://github-profile-trophy.vercel.app/?username=Appology-Inc&theme=discord&no-frame=true&no-bg=true&column=6&margin-w=15" alt="GitHub Trophies" />
+  <h2>🎯 Current Strategic Objectives</h2>
+  <p>Appology Inc. is actively developing the following core technologies across our repositories:</p>
+  
+  <table align="center">
+    <tr>
+      <td align="left" style="padding: 10px 40px;">
+        <ul>
+          <li>🤖 <strong>AI Neural Networks:</strong> Integrating Gemini chatbot assistance into the ordering flow.</li>
+          <li>🗺️ <strong>Logistics Routing:</strong> Deploying Mapbox for turn-by-turn navigation in the Rider App.</li>
+          <li>📈 <strong>Data Forecasting:</strong> Building AI-powered inventory prediction dashboards.</li>
+          <li>📲 <strong>Native Deployment:</strong> Compiling raw `.ipa` and `.apk` mobile builds.</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <br />
