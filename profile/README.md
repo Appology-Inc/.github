@@ -1,16 +1,19 @@
 <div align="center">
-  <!-- Animated Waving Header (Deep Carbon & Blue) -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=250&section=header&text=APPOLOGY%20INC.&fontSize=70&fontColor=3B82F6&animation=fadeIn" width="100%" alt="Appology Inc Header" />
+  <!-- The absolute best header: Waving, Twinkling, Ruby-to-Obsidian Gradient -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=E11D48,0F172A&height=300&section=header&text=Welcome%20to%20Appology%20Inc.&fontSize=60&fontColor=ffffff&animation=twinkling" width="100%" alt="Appology Inc Header" />
 
-  <br><br>
-
-  <!-- Clean, Professional Static Text to prevent rendering errors -->
-  <h2>Precision Software Engineering. Enterprise-Grade Architecture.</h2>
+  <h2 align="center">Building the Future of the Web.</h2>
 
   <p align="center">
-    <img src="https://img.shields.io/badge/Architecture-Scalable-0D1117?style=for-the-badge&logo=amazonaws&logoColor=3B82F6" alt="Architecture" />
-    <img src="https://img.shields.io/badge/Codebase-Production_Ready-0D1117?style=for-the-badge&logo=checkmarx&logoColor=3B82F6" alt="Codebase" />
-    <img src="https://img.shields.io/badge/Deployments-Automated-0D1117?style=for-the-badge&logo=githubactions&logoColor=3B82F6" alt="Deployments" />
+    <a href="https://github.com/Appology-Inc">
+      <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=24&duration=3000&pause=1000&color=E11D48&center=true&vCenter=true&width=600&lines=We+build+cinematic+digital+experiences.;Pioneering+modern+web+architecture.;Scale,+Speed,+and+Elegance." alt="Typing SVG" />
+    </a>
+  </p>
+
+  <p align="center">
+    <img src="https://img.shields.io/badge/Enterprise-Ready-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Enterprise" />
+    <img src="https://img.shields.io/badge/Open-Source-E11D48?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="Open Source" />
+    <img src="https://img.shields.io/badge/Innovation-Driven-0F172A?style=for-the-badge&logo=rocket&logoColor=white" alt="Innovation" />
   </p>
 </div>
 
@@ -19,19 +22,19 @@
 <table align="center" width="100%">
   <tr>
     <td align="center" width="50%" valign="top">
-      <h3>🏛️ Organization Profile</h3>
+      <h3>🏢 Who We Are</h3>
       <p align="left">
-        <strong>Appology Inc.</strong> is dedicated to engineering robust, high-performance digital ecosystems. We build software that scales cleanly and operates flawlessly under pressure.<br><br>
-        Our approach is rooted in clean code, modular architecture, and a relentless focus on the end-user experience.
+        <strong>Appology Inc.</strong> is a next-generation software engineering organization focused on creating highly scalable, cinematic, and deeply integrated applications. <br><br>
+        We specialize in complex monorepo architectures, real-time data pipelines, and pushing the visual limits of what the modern web can do.
       </p>
     </td>
     <td align="center" width="50%" valign="top">
-      <h3>⚙️ Core Technologies</h3>
+      <h3>🚀 Our Core Expertise</h3>
       <p align="left">
-        <strong>Frontend:</strong> React, Next.js, Vite <br>
-        <strong>Mobile:</strong> React Native, Expo <br>
-        <strong>Backend:</strong> Node.js, Express <br>
-        <strong>Database & Cloud:</strong> Firebase, AWS
+        📱 <strong>Cross-Platform Mobile:</strong> React Native & Expo <br>
+        ⚡ <strong>Blazing Fast Web:</strong> React 18, Next.js, Vite <br>
+        🔥 <strong>Cloud Infrastructure:</strong> Firebase Ecosystem & Node.js <br>
+        🛡 <strong>Secure Architecture:</strong> FinTech Integrations & Real-Time Sync
       </p>
     </td>
   </tr>
@@ -40,39 +43,41 @@
 <hr />
 
 <div align="center">
-  <h2>🌟 Flagship Project: Anjani Ecosystem</h2>
-  <p>A multi-application monorepo built for real-time restaurant operations.</p>
+  <h2>🌟 Featured Ecosystem: Anjani Restaurant</h2>
+  <p>Our flagship, multi-app food delivery platform powering the modern restaurant.</p>
   
-  <table align="center">
-    <tr>
-      <td align="center" style="padding: 20px;">
-        <h3>🍔 Anjani Restaurant Platform</h3>
-        <p><i>Cinematic Customer App • GPS Rider App • Owner Dashboard</i></p>
-        <a href="https://github.com/Appology-Inc/anjani-restaurant">
-          <img src="https://img.shields.io/badge/View_The_Codebase-3B82F6?style=for-the-badge&logo=github&logoColor=white" alt="View Repository" />
-        </a>
-      </td>
-    </tr>
-  </table>
+  <a href="https://github.com/Appology-Inc/anjani-restaurant">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Appology-Inc&repo=anjani-restaurant&bg_color=0F172A&border_color=E11D48&title_color=E11D48&text_color=ffffff&icon_color=E11D48" alt="Anjani Restaurant Repo" />
+  </a>
+  <br/><br/>
+  <p>
+    <a href="https://github.com/Appology-Inc/anjani-restaurant">
+      <img src="https://img.shields.io/badge/View_The_Codebase-E11D48?style=for-the-badge&logo=github&logoColor=white" alt="View Repository" />
+    </a>
+  </p>
 </div>
 
 <hr />
 
 <div align="center">
-  <h2>💻 Tech Arsenal</h2>
-  <p>We rely on battle-tested frameworks to deliver uncompromising quality.</p>
-  
-  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
-  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white" alt="Firebase" />
-  <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" alt="Vite" />
+  <h2>📊 Organization Analytics</h2>
+  <p>A look at the numbers driving Appology Inc. forward.</p>
+  <img src="https://github-readme-stats.vercel.app/api?username=Appology-Inc&show_icons=true&bg_color=0F172A&border_color=E11D48&title_color=E11D48&text_color=ffffff&icon_color=E11D48" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Appology-Inc&layout=compact&bg_color=0F172A&border_color=E11D48&title_color=E11D48&text_color=ffffff" alt="Top Languages" />
 </div>
 
-<br><br>
+<br />
 
 <div align="center">
+  <h3>⚡ Technologies We Master</h3>
+  <img src="https://skillicons.dev/icons?i=react,ts,nodejs,firebase,vite,githubactions,linux,vscode" />
+</div>
+
+<hr />
+
+<div align="center">
+  <h3>Let's Build Something Incredible.</h3>
   <a href="mailto:hello@appology.inc">
-    <img src="https://img.shields.io/badge/Contact_Us-0D1117?style=for-the-badge&logo=minutemailer&logoColor=3B82F6" alt="Contact Us" />
+    <img src="https://img.shields.io/badge/Contact_Us-0F172A?style=for-the-badge&logo=minutemailer&logoColor=E11D48" alt="Contact Us" />
   </a>
 </div>
