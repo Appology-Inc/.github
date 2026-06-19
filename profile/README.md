@@ -1,19 +1,19 @@
 <div align="center">
-  <!-- The absolute best header: Waving, Twinkling, Ruby-to-Obsidian Gradient -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=E11D48,0F172A&height=300&section=header&text=Welcome%20to%20Appology%20Inc.&fontSize=60&fontColor=ffffff&animation=twinkling" width="100%" alt="Appology Inc Header" />
+  <!-- Aggressive Matrix Green / Black Rectangle Header with ScaleIn animation -->
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=090909&height=250&section=header&text=APPOLOGY%20INC.&fontSize=90&fontColor=00FF41&animation=scaleIn&desc=System%20Online.&descAlignY=75&descSize=20" width="100%" alt="Appology Inc Header" />
 
   <h2 align="center">Building the Future of the Web.</h2>
 
   <p align="center">
     <a href="https://github.com/Appology-Inc">
-      <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=24&duration=3000&pause=1000&color=E11D48&center=true&vCenter=true&width=600&lines=We+build+cinematic+digital+experiences.;Pioneering+modern+web+architecture.;Scale,+Speed,+and+Elegance." alt="Typing SVG" />
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=Executing+cinematic+digital+experiences.;Pioneering+modern+web+architecture.;Scale,+Speed,+and+Elegance." alt="Typing SVG" />
     </a>
   </p>
 
   <p align="center">
-    <img src="https://img.shields.io/badge/Enterprise-Ready-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Enterprise" />
-    <img src="https://img.shields.io/badge/Open-Source-E11D48?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="Open Source" />
-    <img src="https://img.shields.io/badge/Innovation-Driven-0F172A?style=for-the-badge&logo=rocket&logoColor=white" alt="Innovation" />
+    <img src="https://img.shields.io/badge/Enterprise-Ready-090909?style=for-the-badge&logo=github&logoColor=00FF41" alt="Enterprise" />
+    <img src="https://img.shields.io/badge/Open-Source-00FF41?style=for-the-badge&logo=opensourceinitiative&logoColor=090909" alt="Open Source" />
+    <img src="https://img.shields.io/badge/Innovation-Driven-090909?style=for-the-badge&logo=rocket&logoColor=00FF41" alt="Innovation" />
   </p>
 </div>
 
@@ -47,12 +47,12 @@
   <p>Our flagship, multi-app food delivery platform powering the modern restaurant.</p>
   
   <a href="https://github.com/Appology-Inc/anjani-restaurant">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Appology-Inc&repo=anjani-restaurant&bg_color=0F172A&border_color=E11D48&title_color=E11D48&text_color=ffffff&icon_color=E11D48" alt="Anjani Restaurant Repo" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Appology-Inc&repo=anjani-restaurant&bg_color=090909&border_color=00FF41&title_color=00FF41&text_color=ffffff&icon_color=00FF41" alt="Anjani Restaurant Repo" />
   </a>
   <br/><br/>
   <p>
     <a href="https://github.com/Appology-Inc/anjani-restaurant">
-      <img src="https://img.shields.io/badge/View_The_Codebase-E11D48?style=for-the-badge&logo=github&logoColor=white" alt="View Repository" />
+      <img src="https://img.shields.io/badge/View_The_Codebase-00FF41?style=for-the-badge&logo=github&logoColor=090909" alt="View Repository" />
     </a>
   </p>
 </div>
@@ -60,17 +60,19 @@
 <hr />
 
 <div align="center">
-  <h2>📊 Organization Analytics</h2>
-  <p>A look at the numbers driving Appology Inc. forward.</p>
-  <img src="https://github-readme-stats.vercel.app/api?username=Appology-Inc&show_icons=true&bg_color=0F172A&border_color=E11D48&title_color=E11D48&text_color=ffffff&icon_color=E11D48" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Appology-Inc&layout=compact&bg_color=0F172A&border_color=E11D48&title_color=E11D48&text_color=ffffff" alt="Top Languages" />
+  <h2>🏆 Organizational Milestones & Trophies</h2>
+  <p>A showcase of our engineering achievements and open-source impact.</p>
+  <br>
+  <!-- GitHub Profile Trophy with Matrix theme -->
+  <img src="https://github-profile-trophy.vercel.app/?username=Appology-Inc&theme=discord&no-frame=true&no-bg=true&column=6&margin-w=15" alt="GitHub Trophies" />
 </div>
 
 <br />
 
 <div align="center">
   <h3>⚡ Technologies We Master</h3>
-  <img src="https://skillicons.dev/icons?i=react,ts,nodejs,firebase,vite,githubactions,linux,vscode" />
+  <!-- Monochrome/Dark tech icons for a highly masculine look -->
+  <img src="https://skillicons.dev/icons?i=react,ts,nodejs,firebase,vite,githubactions,linux,vscode&theme=dark" />
 </div>
 
 <hr />
@@ -78,6 +80,6 @@
 <div align="center">
   <h3>Let's Build Something Incredible.</h3>
   <a href="mailto:hello@appology.inc">
-    <img src="https://img.shields.io/badge/Contact_Us-0F172A?style=for-the-badge&logo=minutemailer&logoColor=E11D48" alt="Contact Us" />
+    <img src="https://img.shields.io/badge/Contact_Us-090909?style=for-the-badge&logo=minutemailer&logoColor=00FF41" alt="Contact Us" />
   </a>
 </div>
