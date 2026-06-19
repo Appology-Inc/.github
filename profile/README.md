@@ -60,22 +60,33 @@
 <hr />
 
 <div align="center">
-  <h2>🎯 Current Strategic Objectives</h2>
-  <p>Appology Inc. is actively developing the following core technologies across our repositories:</p>
-  
-  <table align="center">
-    <tr>
-      <td align="left" style="padding: 10px 40px;">
-        <ul>
-          <li>🤖 <strong>AI Neural Networks:</strong> Integrating Gemini chatbot assistance into the ordering flow.</li>
-          <li>🗺️ <strong>Logistics Routing:</strong> Deploying Mapbox for turn-by-turn navigation in the Rider App.</li>
-          <li>📈 <strong>Data Forecasting:</strong> Building AI-powered inventory prediction dashboards.</li>
-          <li>📲 <strong>Native Deployment:</strong> Compiling raw `.ipa` and `.apk` mobile builds.</li>
-        </ul>
-      </td>
-    </tr>
-  </table>
+  <h2>🌐 Global System Architecture</h2>
+  <p>The core infrastructure powering Appology Inc. deployments.</p>
 </div>
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#090909', 'primaryTextColor': '#00FF41', 'primaryBorderColor': '#00FF41', 'lineColor': '#00FF41', 'secondaryColor': '#090909', 'tertiaryColor': '#090909', 'clusterBkg': '#000000', 'clusterBorder': '#00FF41'}}}%%
+graph TD
+    subgraph Client Applications
+        A[🍽️ Customer App <br/> React Native]
+        B[🛵 Rider App <br/> React Native]
+        C[📊 Admin Dashboard <br/> React/Vite]
+    end
+
+    subgraph Appology Cloud Infrastructure
+        D[(🔥 Firebase Cloud Firestore <br/> Real-Time Sync)]
+        E[☁️ Firebase Auth & Storage]
+        F[🛡️ Node.js Payment Server <br/> Razorpay Webhooks]
+    end
+
+    A <-->|Live Menu & Orders| D
+    B <-->|GPS Tracking| D
+    C <-->|Kanban Updates| D
+    
+    A -->|Authentication| E
+    A -->|Payment Request| F
+    F -->|Verify Signature| D
+```
 
 <br />
 
