@@ -1,73 +1,124 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="300" viewBox="0 0 800 300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="100%" height="300">
   <defs>
-    <!-- Deep immersive background -->
-    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#001a05" />
+    <!-- Background -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#0f1f14" />
       <stop offset="100%" stop-color="#050505" />
     </radialGradient>
-    
-    <!-- Neon Glow Filter -->
-    <filter id="neonGlow">
-      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+
+    <!-- Glow filters -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glow-intense">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
   </defs>
 
-  <rect width="100%" height="100%" fill="url(#bgGlow)" rx="15" ry="15" />
+  <!-- Base Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
 
-  <!-- Floating Data Nodes (Particles) -->
-  <g fill="#00FF41" filter="url(#neonGlow)">
-    <circle cx="100" cy="350" r="2" opacity="0"><animate attributeName="cy" values="350; -50" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.6; 0" dur="8s" repeatCount="indefinite"/></circle>
-    <circle cx="250" cy="350" r="3" opacity="0"><animate attributeName="cy" values="350; -50" dur="12s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.8; 0" dur="12s" begin="2s" repeatCount="indefinite"/></circle>
-    <circle cx="400" cy="350" r="1.5" opacity="0"><animate attributeName="cy" values="350; -50" dur="10s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.5; 0" dur="10s" begin="1s" repeatCount="indefinite"/></circle>
-    <circle cx="550" cy="350" r="2.5" opacity="0"><animate attributeName="cy" values="350; -50" dur="14s" begin="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.7; 0" dur="14s" begin="4s" repeatCount="indefinite"/></circle>
-    <circle cx="700" cy="350" r="2" opacity="0"><animate attributeName="cy" values="350; -50" dur="9s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.6; 0" dur="9s" begin="3s" repeatCount="indefinite"/></circle>
-    <circle cx="180" cy="350" r="4" opacity="0"><animate attributeName="cy" values="350; -50" dur="15s" begin="5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.4; 0" dur="15s" begin="5s" repeatCount="indefinite"/></circle>
-    <circle cx="620" cy="350" r="1" opacity="0"><animate attributeName="cy" values="350; -50" dur="7s" begin="0.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0; 0.8; 0" dur="7s" begin="0.5s" repeatCount="indefinite"/></circle>
+  <!-- Animated Grid Lines -->
+  <g stroke="#00FF41" stroke-width="1" opacity="0.1">
+    <!-- horizontal -->
+    <line x1="0" y1="50" x2="1000" y2="50" />
+    <line x1="0" y1="100" x2="1000" y2="100" />
+    <line x1="0" y1="150" x2="1000" y2="150" />
+    <line x1="0" y1="200" x2="1000" y2="200" />
+    <line x1="0" y1="250" x2="1000" y2="250" />
+    <!-- vertical -->
+    <line x1="100" y1="0" x2="100" y2="300" />
+    <line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="300" y1="0" x2="300" y2="300" />
+    <line x1="400" y1="0" x2="400" y2="300" />
+    <line x1="500" y1="0" x2="500" y2="300" />
+    <line x1="600" y1="0" x2="600" y2="300" />
+    <line x1="700" y1="0" x2="700" y2="300" />
+    <line x1="800" y1="0" x2="800" y2="300" />
+    <line x1="900" y1="0" x2="900" y2="300" />
   </g>
 
-  <!-- Morphing Data Waves -->
-  <g fill="none" stroke-width="2" filter="url(#neonGlow)">
+  <!-- Left Side Data Stream -->
+  <g fill="#00FF41" filter="url(#glow)" opacity="0.7">
+    <rect x="50" y="-20" width="2" height="40">
+      <animate attributeName="y" values="-50; 350; -50" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 1; 0" dur="3s" repeatCount="indefinite" />
+    </rect>
+    <rect x="150" y="350" width="4" height="20">
+      <animate attributeName="y" values="350; -50; 350" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.8; 0" dur="5s" repeatCount="indefinite" />
+    </rect>
+    <circle cx="250" cy="0" r="3">
+      <animate attributeName="cy" values="0; 300; 0" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 1; 0" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <rect x="350" y="150" width="2" height="30">
+      <animate attributeName="y" values="300; 0; 300" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.6; 0" dur="6s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <!-- Right Side Data Stream -->
+  <g fill="#00FF41" filter="url(#glow)" opacity="0.7">
+    <rect x="850" y="-20" width="3" height="30">
+      <animate attributeName="y" values="-50; 350; -50" dur="4.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 1; 0" dur="4.5s" repeatCount="indefinite" />
+    </rect>
+    <rect x="750" y="350" width="2" height="50">
+      <animate attributeName="y" values="350; -50; 350" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.5; 0" dur="3.5s" repeatCount="indefinite" />
+    </rect>
+    <circle cx="950" cy="0" r="4">
+      <animate attributeName="cy" values="0; 300; 0" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 1; 0" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <rect x="650" y="-50" width="2" height="40">
+      <animate attributeName="y" values="-50; 350; -50" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0; 0.7; 0" dur="5s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <!-- Cybernetic Core Orbiters (Center) -->
+  <g transform="translate(500, 150)">
+    <!-- Outer Ring Slow -->
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#00FF41" stroke-width="1" stroke-dasharray="1 10 20 5" opacity="0.3">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite" />
+    </circle>
     
-    <!-- Wave 1 (Fast, subtle) -->
-    <path stroke="#00FF41" opacity="0.3">
-      <animate attributeName="d" 
-        values="M-100,150 C100,50 300,250 500,150 S700,50 900,150;
-                M-100,150 C100,250 300,50 500,150 S700,250 900,150;
-                M-100,150 C100,50 300,250 500,150 S700,50 900,150" 
-        dur="6s" repeatCount="indefinite" />
-    </path>
+    <!-- Medium Ring -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#00FF41" stroke-width="2" stroke-dasharray="30 20 10 40" filter="url(#glow)" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="20s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.4; 0.8; 0.4" dur="4s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Inner Rapid Ring -->
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#00FF41" stroke-width="3" stroke-dasharray="5 10 50 10" filter="url(#glow-intense)" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite" />
+    </circle>
 
-    <!-- Wave 2 (Slow, sweeping) -->
-    <path stroke="#00ff9d" opacity="0.2" stroke-width="1">
-      <animate attributeName="d" 
-        values="M-100,150 C150,250 250,50 450,150 S650,250 900,150;
-                M-100,150 C150,50 250,250 450,150 S650,50 900,150;
-                M-100,150 C150,250 250,50 450,150 S650,250 900,150" 
-        dur="10s" repeatCount="indefinite" />
-    </path>
+    <!-- Glowing Hexagon 1 -->
+    <polygon points="0,-80 69,-40 69,40 0,80 -69,40 -69,-40" fill="none" stroke="#00FF41" stroke-width="2" opacity="0.4" filter="url(#glow)">
+       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite" />
+       <animate attributeName="opacity" values="0.2; 0.6; 0.2" dur="5s" repeatCount="indefinite" />
+    </polygon>
 
-    <!-- Wave 3 (Bold, hypnotic) -->
-    <path stroke="#00a82b" opacity="0.5" stroke-width="4">
-      <animate attributeName="d" 
-        values="M-100,150 C200,80 400,220 600,150 S800,80 900,150;
-                M-100,150 C200,220 400,80 600,150 S800,220 900,150;
-                M-100,150 C200,80 400,220 600,150 S800,80 900,150" 
-        dur="8s" repeatCount="indefinite" />
-    </path>
+    <!-- Glowing Hexagon 2 -->
+    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="none" stroke="#00FF41" stroke-width="1" opacity="0.6" filter="url(#glow)">
+       <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="15s" repeatCount="indefinite" />
+    </polygon>
 
+    <!-- Main Text -->
+    <text x="0" y="12" font-family="'Courier New', Courier, monospace" font-size="46" font-weight="900" fill="#00FF41" text-anchor="middle" filter="url(#glow-intense)">
+      APPOLOGY INC.
+      <animate attributeName="opacity" values="1; 0.8; 1; 0.9; 1; 0.7; 1; 0.9; 1" dur="4s" repeatCount="indefinite" />
+    </text>
   </g>
-
-  <!-- Central Text -->
-  <text x="50%" y="55%" font-family="'Courier New', Courier, monospace" font-weight="bold" font-size="80" text-anchor="middle" fill="#ffffff" filter="url(#neonGlow)" dominant-baseline="middle" letter-spacing="6">
-    APPOLOGY INC.
-  </text>
-  
-  <!-- Subtle reflection text -->
-  <text x="50%" y="55%" font-family="'Courier New', Courier, monospace" font-weight="bold" font-size="80" text-anchor="middle" fill="#00FF41" opacity="0.3" dominant-baseline="middle" letter-spacing="6" transform="translate(0, 4)">
-    APPOLOGY INC.
-  </text>
 </svg>
