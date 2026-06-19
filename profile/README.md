@@ -1,9 +1,6 @@
 <div align="center">
-  <!-- Shape-less Transparent Header with Smooth Fade-In Animation -->
-  <img src="https://capsule-render.vercel.app/api?type=transparent&color=090909&height=120&section=header&text=APPOLOGY%20INC.&fontSize=100&fontColor=00FF41&animation=fadeIn" width="100%" alt="Appology Inc Header" />
-
-  <!-- Custom AI-Generated Hacker Geometry Banner -->
-  <img src="banner.png" width="100%" alt="Matrix Cyberpunk Infrastructure" />
+  <!-- Soft, natural header with a subtle twinkling animation -->
+  <img src="https://capsule-render.vercel.app/api?type=soft&color=090909&height=200&section=header&text=APPOLOGY%20INC.&fontSize=80&fontColor=00FF41&animation=twinkling" width="100%" alt="Appology Inc Header" />
 
   <br><br>
 
@@ -65,33 +62,15 @@
 <hr />
 
 <div align="center">
-  <h2>🌐 Global System Architecture</h2>
-  <p>The core infrastructure powering Appology Inc. deployments.</p>
+  <h2>🚀 Our Mission & Focus</h2>
+  <p>We are currently focused on building intuitive, natural software experiences that simplify complex operations.</p>
+  <br>
+  <p>
+    <strong>🍽️ Food Delivery Logistics:</strong> Streamlining the path from kitchen to customer.<br>
+    <strong>💳 Secure Transactions:</strong> Building flawless, real-time payment integrations.<br>
+    <strong>⚡ High-Performance Interfaces:</strong> Crafting UIs that feel instantly responsive.
+  </p>
 </div>
-
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#090909', 'primaryTextColor': '#00FF41', 'primaryBorderColor': '#00FF41', 'lineColor': '#00FF41', 'secondaryColor': '#090909', 'tertiaryColor': '#090909', 'clusterBkg': '#000000', 'clusterBorder': '#00FF41'}}}%%
-graph TD
-    subgraph Client Applications
-        A[🍽️ Customer App <br/> React Native]
-        B[🛵 Rider App <br/> React Native]
-        C[📊 Admin Dashboard <br/> React/Vite]
-    end
-
-    subgraph Appology Cloud Infrastructure
-        D[(🔥 Firebase Cloud Firestore <br/> Real-Time Sync)]
-        E[☁️ Firebase Auth & Storage]
-        F[🛡️ Node.js Payment Server <br/> Razorpay Webhooks]
-    end
-
-    A <-->|Live Menu & Orders| D
-    B <-->|GPS Tracking| D
-    C <-->|Kanban Updates| D
-    
-    A -->|Authentication| E
-    A -->|Payment Request| F
-    F -->|Verify Signature| D
-```
 
 <br />
 
