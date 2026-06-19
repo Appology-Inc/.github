@@ -1,6 +1,6 @@
 <div align="center">
-  <!-- Soft, natural header with a subtle twinkling animation -->
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=090909&height=200&section=header&text=APPOLOGY%20INC.&fontSize=80&fontColor=00FF41&animation=twinkling" width="100%" alt="Appology Inc Header" />
+  <!-- Custom Artistic Cinematic Glow Header -->
+  <img src="header.svg" width="100%" alt="Appology Inc Header" />
 
   <br><br>
 
