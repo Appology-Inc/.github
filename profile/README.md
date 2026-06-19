@@ -1,15 +1,11 @@
 <div align="center">
-  <!-- Minimalist Enterprise Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=250&section=header&text=APPOLOGY%20INC.&fontSize=70&fontColor=3B82F6&desc=Building%20the%20Modern%20Web.&descAlignY=70&descSize=20" width="100%" alt="Appology Inc Header" />
+  <!-- Animated Waving Header (Deep Carbon & Blue) -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=250&section=header&text=APPOLOGY%20INC.&fontSize=70&fontColor=3B82F6&animation=fadeIn" width="100%" alt="Appology Inc Header" />
 
   <br><br>
 
-  <!-- Clean, Professional Typing Effect -->
-  <a href="https://github.com/Appology-Inc">
-    <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&duration=3000&pause=1000&color=3B82F6&center=true&vCenter=true&width=600&lines=Precision+Software+Engineering.;Enterprise-Grade+Architecture.;Scalable+Monorepo+Deployments." alt="Enterprise Typing SVG" />
-  </a>
-
-  <br><br>
+  <!-- Clean, Professional Static Text to prevent rendering errors -->
+  <h2>Precision Software Engineering. Enterprise-Grade Architecture.</h2>
 
   <p align="center">
     <img src="https://img.shields.io/badge/Architecture-Scalable-0D1117?style=for-the-badge&logo=amazonaws&logoColor=3B82F6" alt="Architecture" />
@@ -47,20 +43,30 @@
   <h2>🌟 Flagship Project: Anjani Ecosystem</h2>
   <p>A multi-application monorepo built for real-time restaurant operations.</p>
   
-  <a href="https://github.com/Appology-Inc/anjani-restaurant">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Appology-Inc&repo=anjani-restaurant&theme=github_dark&bg_color=0D1117&border_color=3B82F6&title_color=3B82F6&text_color=ffffff&icon_color=3B82F6" alt="Anjani Restaurant Repo" />
-  </a>
+  <table align="center">
+    <tr>
+      <td align="center" style="padding: 20px;">
+        <h3>🍔 Anjani Restaurant Platform</h3>
+        <p><i>Cinematic Customer App • GPS Rider App • Owner Dashboard</i></p>
+        <a href="https://github.com/Appology-Inc/anjani-restaurant">
+          <img src="https://img.shields.io/badge/View_The_Codebase-3B82F6?style=for-the-badge&logo=github&logoColor=white" alt="View Repository" />
+        </a>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <hr />
 
 <div align="center">
-  <h2>📊 Engineering Analytics</h2>
-  <p>Real-time metrics tracking our organization's output.</p>
+  <h2>💻 Tech Arsenal</h2>
+  <p>We rely on battle-tested frameworks to deliver uncompromising quality.</p>
   
-  <!-- Extremely reliable GitHub stats widget -->
-  <img src="https://github-readme-stats.vercel.app/api?username=Appology-Inc&show_icons=true&theme=github_dark&bg_color=0D1117&border_color=3B82F6&title_color=3B82F6&text_color=ffffff&icon_color=3B82F6&hide_border=true" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Appology-Inc&layout=compact&theme=github_dark&bg_color=0D1117&border_color=3B82F6&title_color=3B82F6&text_color=ffffff&hide_border=true" alt="Top Languages" />
+  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white" alt="Firebase" />
+  <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E" alt="Vite" />
 </div>
 
 <br><br>
