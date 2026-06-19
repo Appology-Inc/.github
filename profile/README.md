@@ -1,6 +1,11 @@
 <div align="center">
-  <!-- Matrix Cylinder Header with Twinkling Animation (No Wave) -->
-  <img src="https://capsule-render.vercel.app/api?type=cylinder&color=090909&height=250&section=header&text=APPOLOGY%20INC.&fontSize=90&fontColor=00FF41&animation=twinkling&desc=System%20Online.&descAlignY=75&descSize=20" width="100%" alt="Appology Inc Header" />
+  <!-- Shape-less Transparent Header with Smooth Fade-In Animation -->
+  <img src="https://capsule-render.vercel.app/api?type=transparent&color=090909&height=120&section=header&text=APPOLOGY%20INC.&fontSize=100&fontColor=00FF41&animation=fadeIn" width="100%" alt="Appology Inc Header" />
+
+  <!-- Custom AI-Generated Hacker Geometry Banner -->
+  <img src="banner.png" width="100%" alt="Matrix Cyberpunk Infrastructure" />
+
+  <br><br>
 
   <h2 align="center">Building the Future of the Web.</h2>
 
